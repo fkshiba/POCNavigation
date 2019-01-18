@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_graph"
+    app:startDestination="@id/home2Fragment">
+    <fragment
+        android:id="@+id/home2Fragment"
+        android:name="com.felipeshiba.pocnavigation.Home2Fragment"
+        android:label="fragment_home2"
+        tools:layout="@layout/fragment_home2" >
+        <action
+            android:id="@+id/action_home2Fragment_to_home3Fragment"
+            app:destination="@id/home3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/home3Fragment"
+        android:name="com.felipeshiba.pocnavigation.Home3Fragment"
+        android:label="fragment_home3"
+        tools:layout="@layout/fragment_home3" >
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="ifood://home/" />
+    </fragment>
+</navigation>

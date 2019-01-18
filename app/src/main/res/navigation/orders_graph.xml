@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/orders_graph"
+    app:startDestination="@id/orders2Fragment">
+    <fragment
+        android:id="@+id/orders2Fragment"
+        android:name="com.felipeshiba.pocnavigation.Orders2Fragment"
+        android:label="fragment_orders2"
+        tools:layout="@layout/fragment_orders2" />
+</navigation>
